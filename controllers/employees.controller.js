@@ -69,7 +69,6 @@ exports.putId = async (req, res) => {
 };
 
 exports.deletedId = async (req, res) => {
-
     try {
         const dep = await(Employee.findById(req.params.id));
         if(dep) {
@@ -81,5 +80,4 @@ exports.deletedId = async (req, res) => {
       catch(err) {
         res.status(500).json({ message: err });
       }
-
 };
