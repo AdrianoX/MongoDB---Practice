@@ -1,5 +1,4 @@
 const Department = require("../department.model.js");
-// const { Mongoose } = require('mongoose');
 const expect = require("chai").expect;
 const MongoMemoryServer = require("mongodb-memory-server").MongoMemoryServer;
 const mongoose = require("mongoose");
