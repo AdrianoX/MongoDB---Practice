@@ -1,6 +1,5 @@
 const Employee = require("../employee.model.js");
 const expect = require("chai").expect;
-// const mongoose = require('mongoose');
 
 describe("Employee", () => {
   it("should throw an error if no arg", () => {
@@ -19,11 +18,11 @@ describe("Employee", () => {
       { firstName: [], lastName: [], department: [] },
       { firstName: {}, lastName: {}, department: {} },
       { firstName: undefined, lastName: undefined, department: undefined },
-      { firstName: "Amanda", lastName: "Doe", department: undefined }, // ? . CL
-      { firstName: "Amanda", lastName: "Doe", department: true }, // ? . CL
-      { firstName: "Amanda", lastName: "Doe", department: false }, // ? . CL
-      { firstName: "Amanda", lastName: "Doe", department: [] }, // ? . CL
-      { firstName: "Amanda", lastName: "Doe", department: {} }, // ? . CL
+      { firstName: "Amanda", lastName: "Doe", department: undefined },
+      { firstName: "Amanda", lastName: "Doe", department: true },
+      { firstName: "Amanda", lastName: "Doe", department: false },
+      { firstName: "Amanda", lastName: "Doe", department: [] },
+      { firstName: "Amanda", lastName: "Doe", department: {} },
     ];
 
     for (let name of cases) {
@@ -35,7 +34,3 @@ describe("Employee", () => {
     }
   });
 });
-
-// after(() => {
-//     mongoose.models = {};
-// });
