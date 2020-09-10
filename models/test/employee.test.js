@@ -29,7 +29,7 @@ describe("Employee", () => {
       const employee = new Employee({ name });
 
       employee.validate((err) => {
-        expect(err).to.exist;
+        expect(err).to.exist; 
       });
     }
   });
