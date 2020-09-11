@@ -19,6 +19,11 @@ describe("Department", () => {
         }
     });
 
+    after(() => {
+        mongoose.models = {};
+      });
+
+      
     describe("Reading data", () => {
         before(async () => {
             const testDepOne = new Department({ name: "Department #1" });
