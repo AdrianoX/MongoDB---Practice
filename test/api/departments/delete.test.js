@@ -23,7 +23,6 @@ describe('DELETE /api/departments', () => {
         const res = await request(server).delete('/api/departments/5d9f1140f10a81216cfd4408');
         const deleteDepartment = await Department.findOne({ name: '#Department #1' });
         expect(res.status).to.be.equal(200);
-        // expect(res.body.message).to.not.be.null;  <- ? CL ?
         expect(deleteDepartment).to.be.null;
     });
 

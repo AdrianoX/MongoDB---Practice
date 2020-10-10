@@ -31,8 +31,6 @@ describe('Get / api/departments', () => {
 
     });
 
-
-
     it('/ should return all departments', async () => {
         const res = await request(server).get('/api/departments');
         expect(res.status).to.be.equal(200);
